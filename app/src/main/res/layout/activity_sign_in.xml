@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/chocolates"
+    tools:context=".firebase.SignInActivity"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="#58FFC107">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/phoneedtsignin"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:inputType="phone"
+    android:hint="PhoneNumber"
+    android:text="0987654321"
+    android:textSize="20sp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:padding="8dp"
+    android:layout_marginBottom="8dp"
+    />
+<!--    <com.google.android.material.textfield.TextInputEditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:id="@+id/nameedt"-->
+<!--        android:padding="8dp"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:hint="Name"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="20sp"-->
+<!--        />-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pwedtsignin"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:text="12345"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+
+        android:textSize="20sp"
+        />
+        <Button
+            android:id="@+id/signinbtniddd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SignIn"
+            android:backgroundTint="#12A318"
+            android:textColor="@color/white"
+            android:layout_margin="8dp"
+
+            />
+    </LinearLayout>
+</FrameLayout>

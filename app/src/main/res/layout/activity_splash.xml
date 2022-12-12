@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/food11"
+
+    tools:context=".SplashActivity">
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--    android:layout_marginLeft="32dp"-->
+<!--android:layout_marginRight="32dp"-->
+<!--        android:src="@drawable/fastfood"/>-->
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+  android:layout_centerInParent="true"
+    android:background="#A108134D"
+    >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/eatlogo"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/eatslogan"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/new_rocker"
+        android:gravity="center"
+        android:text="@string/slogan"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold|italic" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnsignupsplash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_500"
+            android:text="SignUp"
+           android:onClick="signuppage"
+            android:textColor="@color/white"
+           />
+
+        <Button
+            android:id="@+id/btnsiginsplash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:onClick="signinpage"
+            android:backgroundTint="@color/purple_500"
+            android:shadowColor="@color/black"
+            android:text="SignIn"
+
+            android:textColor="@color/white"
+           />
+    </LinearLayout>
+</RelativeLayout>
